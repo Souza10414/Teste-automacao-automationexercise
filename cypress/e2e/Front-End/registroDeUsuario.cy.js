@@ -1,4 +1,4 @@
-const { faker, da } = require('@faker-js/faker');
+const { faker} = require('@faker-js/faker');
 
 class registroUsuario {
     buscarElemento(elemento) {
@@ -57,7 +57,7 @@ describe("Registro de usuario", () => {
          registro.digitarElemento('[data-qa="last_name"]')(dadosUsuario.lastname);
          registro.digitarElemento('[data-qa="company"]')(dadosUsuario.company);
          registro.digitarElemento('[data-qa="address"]')(dadosUsuario.address);
-         const selectContrys = {
+         const selecionarPais = {
             1: "India",
             2: "United States",
             3: "Canada",
