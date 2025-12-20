@@ -51,4 +51,11 @@ describe('Carrinho de compras', () => {
             carrinho.validarElemento('.disabled')("contain", "1");
         });
     });
+
+    it('Deve adicionar produto no carrinho com um produto ja adicionado', () => {
+        const carrinho = new carrinhoDeCompras();
+
+        cy.get('img[src="/get_product_picture/1"]').should("be.visible");
+
+    });
 });

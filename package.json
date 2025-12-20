@@ -21,7 +21,6 @@
   "devDependencies": {
     "@faker-js/faker": "^10.1.0",
     "cypress": "^15.7.1",
-    "cypress-mochawesome-reporter": "^4.0.2",
-    "cypress-plugin-api": "^2.11.2"
+    "cypress-mochawesome-reporter": "^4.0.2"
   }
 }
