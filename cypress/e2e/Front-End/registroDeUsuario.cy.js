@@ -2,16 +2,16 @@ const { faker} = require('@faker-js/faker');
 
 class registroUsuario {
     buscarElemento(elemento) {
-        const clicar = (condicao, value) => cy.get(elemento).should(condicao, value).click()
-        return clicar
+        const clicar = (condicao, valor) => cy.get(elemento).should(condicao, valor).click()
+        return clicar;
     };
     digitarElemento(elemento) {
         const digitar = (digitar) => cy.get(elemento).type(digitar);
-        return digitar
+        return digitar;
     };
     selecionarElemento(elemento) {
-        const selecionar = (value) => cy.get(elemento).select(value)
-        return selecionar
+        const selecionar = (valor) => cy.get(elemento).select(valor)
+        return selecionar;
     };
 };
 
@@ -48,7 +48,7 @@ describe("Registro de usuario", () => {
          zipcode: faker.location.zipCode(),
          mobileNumber: faker.phone.number('+91 ##########')
          };
-         registro.buscarElemento('#id_gender1')("have.value", "Mr")
+         registro.buscarElemento('#id_gender1')("have.value", "Mr");
          registro.digitarElemento('[data-qa="password"]')(dadosUsuario.password);
          registro.selecionarElemento('[data-qa="days"]')(dadosUsuario.birthDate.day.toString());
          registro.selecionarElemento('[data-qa="months"]')(dadosUsuario.birthDate.month.toString());
@@ -57,7 +57,7 @@ describe("Registro de usuario", () => {
          registro.digitarElemento('[data-qa="last_name"]')(dadosUsuario.lastname);
          registro.digitarElemento('[data-qa="company"]')(dadosUsuario.company);
          registro.digitarElemento('[data-qa="address"]')(dadosUsuario.address);
-         const selecionarPais = {
+         const selectContrys = {
             1: "India",
             2: "United States",
             3: "Canada",
