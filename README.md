@@ -37,69 +37,122 @@ cypress
 ├── reports # Relatórios Mochawesome
 └── screenshots # Evidências de falhas
 
-yaml
-Copiar código
+Aqui está uma versão otimizada e profissional para o seu `README.md`. Eu organizei as informações com ícones, seções claras e uma estrutura que facilita a leitura para quem visitar o seu repositório.
 
 ---
 
-## ⚙️ Pré-requisitos
-Antes de iniciar, é necessário ter instalado:
+# 🚀 Automação de API - Automation Exercise
 
-- Node.js (versão LTS recomendada)  
-- Git  
-- NPM ou Yarn  
+Este projeto contém uma suíte de testes automatizados para a API do site [Automation Exercise](https://automationexercise.com/api_list), desenvolvida utilizando **Cypress**. O objetivo é garantir a qualidade e a confiabilidade dos endpoints através de testes robustos e boas práticas de engenharia de software.
+
+## 🛠️ Tecnologias Utilizadas
+
+* **Cypress**: Framework de testes ponta a ponta.
+* **Node.js**: Ambiente de execução.
+* **Mochawesome**: Gerador de relatórios detalhados.
+* **Faker.js**: Geração de dados aleatórios para testes dinâmicos.
 
 ---
 
-## 📦 Instalação do Projeto
+## 🏁 Primeiros Passos
 
-### Clone o repositório
+### Pré-requisitos
+
+* Node.js instalado (versão 14 ou superior).
+* Git instalado.
+
+### Instalação
+
+1. **Clone o repositório:**
 ```bash
 git clone https://github.com/seu-usuario/Teste-automa-o-API-automationexercise.git
-📁 Acessando a Pasta do Projeto
-bash
-Copiar código
+
+```
+
+
+2. **Acesse a pasta do projeto:**
+```bash
 cd Teste-automa-o-API-automationexercise
-Instale as dependências
-bash
-Copiar código
+
+```
+
+
+3. **Instale as dependências:**
+```bash
 npm install
-▶️ Executando os Testes
-Abrir o Cypress em modo interativo
-bash
-Copiar código
+
+```
+
+
+
+---
+
+## ▶️ Executando os Testes
+
+Você pode executar os testes de duas formas:
+
+### Modo Interativo (Interface Gráfica)
+
+Ideal para desenvolvimento e depuração.
+
+```bash
 npx cypress open
-Executar testes em modo headless
-bash
-Copiar código
+
+```
+
+### Modo Headless (Linha de Comando)
+
+Ideal para integração contínua (CI).
+
+```bash
 npx cypress run
-📊 Relatórios de Testes
-Após a execução dos testes, os relatórios serão gerados automaticamente utilizando Mochawesome.
 
-Caminho padrão: cypress/reports/
+```
 
-✅ Status dos testes (Pass/Fail)
+---
 
-📸 Evidências
+## 📊 Relatórios de Testes
 
-⏱ Tempo de execução
+Utilizamos o **Mochawesome** para gerar relatórios visuais após a execução em modo headless.
 
-🛠️ Detalhes de falhas
+* **Caminho padrão:** `cypress/reports/`
+* **O que o relatório inclui:**
+* ✅ Status dos testes (Pass/Fail).
+* 📸 Evidências (quando aplicável).
+* ⏱ Tempo total de execução.
+* 🛠️ Detalhes técnicos sobre falhas.
 
-🧠 Boas Práticas Aplicadas
-📌 Separação clara de responsabilidades
 
-🎲 Uso de dados dinâmicos com Faker
 
-🧩 Comandos customizados no Cypress
+---
 
-🏗️ Estrutura organizada e escalável
+## 🧠 Boas Práticas Aplicadas
 
-🔄 Testes reutilizáveis e legíveis
+O projeto foi estruturado seguindo padrões modernos de automação:
 
-👨‍💻 Autores
-Nathanael Henrique Souza Nunes – QA Engineer / SDET
+* **Separação de responsabilidades:** Divisão clara entre testes, comandos e massa de dados.
+* **Dados Dinâmicos:** Uso da biblioteca **Faker** para evitar testes viciados e garantir cobertura com dados variados.
+* **Custom Commands:** Criação de comandos personalizados no Cypress para reutilização de lógica comum.
+* **Escalabilidade:** Estrutura organizada para facilitar a adição de novos cenários sem gerar dívida técnica.
+* **Legibilidade:** Testes escritos de forma declarativa, facilitando o entendimento do negócio.
 
-Wellison Souza Oliveira – QA Engineer
+---
 
-📌 Foco em qualidade, aprendizado contínuo e boas práticas
+## 👨‍💻 Autores
+
+| [<img src="https://github.com/github.png" width="75px;"/><br /><sub><b>Nathanael Nunes</b></sub>](https://github.com/) | [<img src="https://github.com/github.png" width="75px;"/><br /><sub><b>Wellison Oliveira</b></sub>](https://github.com/) |
+| --- | --- |
+| QA Engineer / SDET | QA Engineer |
+
+---
+
+⭐ **Foco em qualidade, aprendizado contínuo e boas práticas.**
+
+---
+
+### Dicas Extras para o seu GitHub:
+
+1. **Badge de Status:** Se você configurar um GitHub Action futuramente, pode adicionar um badge de "Build Passing" no topo.
+2. **Arquivo .gitignore:** Certifique-se de que a pasta `node_modules` e os relatórios locais (`cypress/reports`) estejam no seu `.gitignore` para não "sujar" o repositório.
+
+**Gostaria que eu gerasse o código para o seu arquivo `.gitignore` ou um exemplo de GitHub Action para rodar esses testes automaticamente?**
