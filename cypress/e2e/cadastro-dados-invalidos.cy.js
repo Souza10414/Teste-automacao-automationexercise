@@ -2,7 +2,7 @@ import { faker } from "@faker-js/faker";
 import "cypress-mochawesome-reporter/register";
 
 describe("Cadastro - Criação de conta com dados inválidos (bug)", () => {
-  it("Deve criar conta e exibir mensagem de sucesso", () => {
+  it("Deve tentar cadastrar um usuario com dados inválidos", () => {
     // Página de signup
     cy.visit("/signup");
 
