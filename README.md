@@ -28,14 +28,17 @@ Garantir a qualidade da aplicação **Automation Exercise**, validando fluxos cr
 
 ---
 
-## 📂 Estrutura do Projeto
+📂 Estrutura do Projeto
+
+```bash
 cypress
 ├── e2e
-│ └── specs # Casos de teste
-├── fixtures # Massa de dados
-├── support # Comandos customizados
-├── reports # Relatórios Mochawesome
-└── screenshots # Evidências de falhas
+│   └── specs        # Casos de teste
+├── fixtures         # Massa de dados
+├── support          # Comandos customizados
+├── reports          # Relatórios Mochawesome
+└── screenshots      # Evidências de falhas
+
 
 Aqui está uma versão otimizada e profissional para o seu `README.md`. Eu organizei as informações com ícones, seções claras e uma estrutura que facilita a leitura para quem visitar o seu repositório.
 
